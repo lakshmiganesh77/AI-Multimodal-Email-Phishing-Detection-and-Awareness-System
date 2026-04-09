@@ -1,0 +1,17 @@
+From: "LinkedIn Security" <security-noreply@linkedin.com>
+To: user@example.com
+Subject: LinkedIn Quarterly Security Update
+Date: Thu, 19 Feb 2026 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<h1>Security Update</h1>
+<p>This is a quarterly update on our security features.</p>
+<p>We have introduced new 2FA options to keep your account safe.</p>
+<p>No action is required on your part.</p>
+<br>
+<a href="https://www.linkedin.com/help">Learn More</a>
+</body>
+</html>

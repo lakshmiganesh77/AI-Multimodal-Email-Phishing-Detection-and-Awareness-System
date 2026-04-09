@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: #f6f8fc;
+  --bg-paper: #ffffff;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --border-color: #e0e0e0;
+  --hover-bg: #f0f4f9;
+  --active-bg: #d3e3fd;
+  --active-text: #001d35;
+  --danger-bg: #fce8e6;
+  --danger-text: #c5221f;
+  --warning-bg: #fef7e0;
+  --warning-text: #ea8600;
+  --success-bg: #e6f4ea;
+  --success-text: #137333;
+  --input-bg: #eaf1fb;
+}
+
+.dark-mode {
+  --bg-main: #111318;
+  --bg-paper: #1e1f20;
+  --text-primary: #e3e3e3;
+  --text-secondary: #c4c7c5;
+  --border-color: #444746;
+  --hover-bg: #303134;
+  --active-bg: #004a77;
+  /* Darker blue for active state */
+  --active-text: #d3e3fd;
+  /* Light blue text on dark active */
+  --danger-bg: #5c1e1d;
+  /* Darker red bg */
+  --danger-text: #f2b8b5;
+  /* Light red text */
+  --warning-bg: #57460c;
+  /* Darker yellow bg */
+  --warning-text: #fdd663;
+  /* Light yellow text */
+  --success-bg: #0f5223;
+  /* Darker green bg */
+  --success-text: #c4eed0;
+  /* Light green text */
+  --input-bg: #28292a;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dadce0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bdc1c6;
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.icon-btn {
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #5f6368;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.icon-btn:hover {
+  background-color: rgba(32, 33, 36, 0.059);
+  color: #202124;
+}
+
+/* Email Row Styles */
+.email-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.email-row:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  background-color: #f8f9fa;
+}
+
+.email-row.selected {
+  background-color: #d3e3fd;
+}
+
+.email-row.unread {
+  background-color: white;
+  font-weight: 700;
+}
+
+.email-row.read {
+  background-color: #f4f7f6;
+  color: #5f6368;
+  font-weight: 400;
+}
+
+.phishing-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #fce8e6;
+  color: #d93025;
+  margin-right: 8px;
+}
+
+.safe-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #e6f4ea;
+  color: #137333;
+  border: 1px solid #c6e1c6;
+}
+
+.danger-banner {
+  background-color: #fce8e6;
+  border: 1px solid #f4c7c3;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.danger-banner h3 {
+  color: #c5221f;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.danger-banner p {
+  color: #c5221f;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

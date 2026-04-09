@@ -1,0 +1,124 @@
+.email-list-container {
+    flex: 1;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.email-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.toolbar-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.toolbar-divider {
+    width: 1px;
+    height: 24px;
+    background-color: #dadce0;
+    margin: 0 8px;
+}
+
+.toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.email-count {
+    font-size: 13px;
+}
+
+.email-list-scroll {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.email-list-empty,
+.email-list-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 256px;
+    color: #5f6368;
+}
+
+.email-list-error {
+    color: #d93025;
+}
+
+.email-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: #5f6368;
+}
+
+.email-controls svg:hover {
+    color: #202124;
+}
+
+.email-sender {
+    width: 192px;
+    flex-shrink: 0;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.email-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    font-size: 14px;
+}
+
+.email-subject {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: inherit;
+    margin-right: 8px;
+}
+
+.email-divider {
+    color: #5f6368;
+    margin: 0 4px;
+}
+
+.email-snippet {
+    color: #5f6368;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.email-date {
+    font-size: 12px;
+    color: #5f6368;
+    width: 80px;
+    text-align: right;
+    flex-shrink: 0;
+}

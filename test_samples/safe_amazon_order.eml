@@ -1,0 +1,20 @@
+Content-Type: multipart/mixed; boundary="===============3568505393117775949=="
+MIME-Version: 1.0
+Subject: [SAFE] Your Amazon.com order #123-4567-890
+From: Amazon.com <auto-confirm@amazon.com>
+To: user@example.com
+Date: Sun, 15 Feb 2026 22:14:34 +0530
+
+--===============3568505393117775949==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+
+    <p>Hello,</p>
+    <p>Thanks for your order.</p>
+    <p>Arriving: <b>Wednesday</b></p>
+    <p>Track your package: <a href="https://amazon.com/track">Track Package</a></p>
+    <p>Total: $25.99</p>
+    
+--===============3568505393117775949==--

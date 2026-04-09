@@ -1,0 +1,276 @@
+.email-detail-container {
+    flex: 1;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.email-detail-empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #9aa0a6;
+    gap: 16px;
+}
+
+.email-detail-empty p {
+    font-size: 18px;
+}
+
+.detail-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.detail-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.detail-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.banner-icon {
+    color: #d93025;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.banner-content {
+    flex: 1;
+}
+
+.banner-details {
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #f4c7c3;
+    margin-top: 12px;
+}
+
+.risk-score-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #c5221f;
+}
+
+.risk-score-value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.detected-issues {
+    font-size: 14px;
+    color: #c5221f;
+}
+
+.detected-issues ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+.detected-issues li {
+    margin: 4px 0;
+}
+
+.safe-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.safe-badge h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.safe-badge p {
+    font-size: 14px;
+}
+
+.email-subject-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #202124;
+    margin-bottom: 24px;
+}
+
+.sender-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sender-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sender-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sender-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sender-name {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.sender-name .name {
+    font-weight: 600;
+    color: #202124;
+}
+
+.sender-name .email-addr {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.sender-to {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.sender-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.email-time {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.email-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.email-body {
+    color: #202124;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 32px;
+}
+
+.analysis-section {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.analysis-section details summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #5f6368;
+    padding: 8px 0;
+    user-select: none;
+}
+
+.analysis-section details summary:hover {
+    color: #202124;
+}
+
+.analysis-content {
+    margin-top: 16px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.analysis-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5f6368;
+    margin-right: 8px;
+}
+
+.analysis-value {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.analysis-value.danger {
+    color: #d93025;
+}
+
+.analysis-value.safe {
+    color: #137333;
+}
+
+.analysis-reasons ul {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.analysis-reasons li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 4px 0;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.analysis-reasons li::before {
+    content: "•";
+    color: #1a73e8;
+    font-weight: bold;
+    margin-top: 2px;
+}

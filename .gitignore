@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+build/
+.npm/
+
+# Environment Variables (IMPORTANT: MUST NOT COMMIT)
+.env
+.env.local
+.env.production
+*.pem
+*.key
+*.cert
+*.crt
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker / DB / Logs
+data/
+logs/
+postgres_data/
+redis_data/
+
+# Mac
+.DS_Store
+
+# Databases
+*.db
+*.rdb
+
+# ML Models
+*.safetensors
+*.joblib
+*.pkl
+*.h5
+*.pt
+*.pth
+*.bin
+*.onnx
+*.pb
+*.ckpt
+
+# Datasets and Large Files
+*.csv
+*.tsv
+*.jsonl
+*.zip
+*.tar.gz
+models/
+datasets/

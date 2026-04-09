@@ -1,0 +1,20 @@
+Content-Type: multipart/mixed; boundary="===============7768027545906194486=="
+MIME-Version: 1.0
+Subject: [SAFE] Your Weekly Tech News Digest
+From: TechCrunch <news@techcrunch.com>
+To: subscriber@user.com
+Date: Sun, 15 Feb 2026 22:14:34 +0530
+
+--===============7768027545906194486==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+
+    <h1>Top Stories This Week</h1>
+    <p>1. AI is changing the world.</p>
+    <p>2. New iPhone released.</p>
+    <p>Read more on our website: <a href="https://techcrunch.com">TechCrunch.com</a></p>
+    <p><small>Unsubscribe here</small></p>
+    
+--===============7768027545906194486==--

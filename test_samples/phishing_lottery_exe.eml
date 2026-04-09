@@ -1,0 +1,28 @@
+Content-Type: multipart/mixed; boundary="===============1359585854813155150=="
+MIME-Version: 1.0
+Subject: [PHISHING] CONGRATULATIONS! You have won $1,000,000!
+From: Lottery Winner <claims@lucky-winner-trust.net>
+To: user@example.com
+Date: Sun, 15 Feb 2026 22:14:34 +0530
+
+--===============1359585854813155150==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+
+    <p>Dear Winner,</p>
+    <p>You have been selected to receive a cash prize of <b>$1,000,000 USD</b>.</p>
+    <p>Please download the attached claim form to receive your funds via Bank Transfer.</p>
+    <p><b>Do not tell anyone</b> about this email to ensure security.</p>
+    <p>See attached PDF regarding your prize.</p>
+    
+--===============1359585854813155150==
+Content-Type: application/octet-stream; Name="claim_form.pdf.exe"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="claim_form.pdf.exe"
+
+VGhpcyBpcyB0ZWNobmljYWxseSBhIHZpcnVzIHBheWxvYWQgbWFza2VkIGFzIHRleHQu
+
+--===============1359585854813155150==--

@@ -1,0 +1,18 @@
+From: "IT Support" <support@it-admin-portal.net>
+To: employee@company.com
+Subject: NETWORK ALERT: Unauthorized Login Attempt
+Date: Fri, 07 Feb 2026 12:45:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+<body>
+    <p>We detected a login attempt from Russia.</p>
+    <p>If this was not you, please <strong>reset your password</strong> immediately.</p>
+    <p>
+        <a href="http://192.168.1.105/auth/login.php">Click here to Secure Your Account</a>
+    </p>
+    <br>
+    <p>Note: Failure to verify will result in account lockout.</p>
+</body>
+</html>

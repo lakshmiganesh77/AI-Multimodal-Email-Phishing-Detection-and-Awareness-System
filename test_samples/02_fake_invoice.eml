@@ -1,0 +1,21 @@
+From: "Billing Dept" <billing@unknown-vendor.net>
+To: target@example.com
+Subject: OVERDUE: Invoice #99283 Payment Required
+Date: Thu, 19 Feb 2026 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="boundary_invoice"
+
+--boundary_invoice
+Content-Type: text/plain; charset="utf-8"
+
+Please find attached the invoice for your recent services.
+Payment is due IMMEDIATELY.
+Failure to pay will result in legal action.
+
+--boundary_invoice
+Content-Type: application/pdf; name="Invoice_99283.pdf"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Invoice_99283.pdf"
+
+JVBERi0xLjQKJcFsj678... (Simulated PDF Content)
+--boundary_invoice--

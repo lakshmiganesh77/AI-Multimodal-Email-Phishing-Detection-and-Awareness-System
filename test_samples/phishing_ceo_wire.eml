@@ -1,0 +1,21 @@
+Content-Type: multipart/mixed; boundary="===============8547485767627829134=="
+MIME-Version: 1.0
+Subject: [PHISHING] Urgent Wire Transfer Request - Confidential
+From: CEO <ceo@company-internal-mail.com>
+To: finance@company.com
+Date: Sun, 15 Feb 2026 22:14:34 +0530
+
+--===============8547485767627829134==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+
+    <p>Hi,</p>
+    <p>I need you to process a wire transfer <b>IMMEDIATELY</b> for a new acquisition.</p>
+    <p>This is highly confidential and must be done within the next hour.</p>
+    <p>Do not call me, I am in a meeting. Just process it now.</p>
+    <p>Target Account details attached.</p>
+    <p>Sent from my iPhone</p>
+    
+--===============8547485767627829134==--

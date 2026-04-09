@@ -1,0 +1,18 @@
+From: "Microsoft Security" <security@microsoft-support-team.com>
+To: target@example.com
+Subject: Security Alert: Unusual Login Detected
+Date: Thu, 19 Feb 2026 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<h2 style="color:#0078D4">Microsoft Security</h2>
+<p>We detected an unusual login from Russia.</p>
+<p><b>Please verify your password</b> to secure your account.</p>
+<br>
+<p>Click here to <a href="http://login.microsoft-online-security.com">Secure Your Account</a></p>
+<br>
+<p>Thank you,<br>The Microsoft Team</p>
+</body>
+</html>

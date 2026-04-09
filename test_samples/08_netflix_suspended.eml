@@ -1,0 +1,16 @@
+From: "Netflix" <billing@netflix-updates.com>
+To: target@example.com
+Subject: Account Suspended: Payment Failed
+Date: Thu, 19 Feb 2026 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<h1 style="color:red">Netflix</h1>
+<p>We were unable to process your payment.</p>
+<p>Your membership has been suspended.</p>
+<p>Please update your billing information <b>immediately</b> to keep watching.</p>
+<a href="http://netflix-secure-login.com">Update Payment</a>
+</body>
+</html>

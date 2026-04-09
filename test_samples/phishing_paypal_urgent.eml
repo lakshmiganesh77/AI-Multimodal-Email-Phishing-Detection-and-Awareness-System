@@ -1,0 +1,27 @@
+Content-Type: multipart/mixed; boundary="===============0030078668937015679=="
+MIME-Version: 1.0
+Subject: [PHISHING] URGENT: Your PayPal Account is SUSPENDED!
+From: PayPal Security <security@paypa1-support.com>
+To: user@example.com
+Date: Sun, 15 Feb 2026 22:14:34 +0530
+
+--===============0030078668937015679==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+
+    <html>
+        <body>
+            <h1 style="color:red">ACT NOW!</h1>
+            <p>We detected unauthorized access to your PayPal account.</p>
+            <p>Your account is <b>SUSPENDED</b> until you verify your identity.</p>
+            <p>You must <b>LOGIN IMMEDIATELY</b> within 24 hours or your funds will be lost.</p>
+            <br>
+            <a href="http://192.168.1.55/login">CLICK HERE TO VERIFY NOW</a>
+            <br><br>
+            <small>If you do not Act Now, we will delete your account.</small>
+        </body>
+    </html>
+    
+--===============0030078668937015679==--

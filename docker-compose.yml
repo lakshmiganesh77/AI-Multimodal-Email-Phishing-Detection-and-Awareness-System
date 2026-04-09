@@ -1,0 +1,101 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: phishguard-postgres
+    environment:
+      POSTGRES_USER: phishguard_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secure_password_123}
+      POSTGRES_DB: phishguard_db
+    # ✅ SECURITY FIX: No longer exposing port 5432 to internet. Exposing only to localhost for local dev.
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U phishguard_user -d phishguard_db" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: phishguard-redis
+    # ✅ SECURITY FIX: Password-protected Redis; not accessible from outside Docker network except localhost
+    command: [ "redis-server", "--requirepass", "${REDIS_PASSWORD:-changeme_redis_secret}", "--bind", "0.0.0.0" ]
+    ports:
+      - "127.0.0.1:6380:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: phishguard-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://phishguard_user:${POSTGRES_PASSWORD:-secure_password_123}@db:5432/phishguard_db
+      - REDIS_URL=redis://:${REDIS_PASSWORD:-changeme_redis_secret}@redis:6379/0
+      # ✅ SECURITY FIX: JWT secret must be set via environment variable; never hardcoded
+      # Generate with: openssl rand -hex 32
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:?JWT_SECRET_KEY must be set}
+      - LOG_LEVEL=INFO
+      # Set to "production" to disable /docs and /redoc endpoints
+      - ENVIRONMENT=${ENVIRONMENT:-development}
+    volumes:
+      - ./backend/data:/app/data
+      - ./backend/logs:/app/logs
+      - ./backend/ml:/app/ml
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: unless-stopped
+
+  celery_worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: phishguard-celery
+    command: [ "celery", "-A", "core.celery_app.celery_app", "worker", "--loglevel=INFO" ]
+    environment:
+      - DATABASE_URL=postgresql://phishguard_user:${POSTGRES_PASSWORD:-secure_password_123}@db:5432/phishguard_db
+      - REDIS_URL=redis://:${REDIS_PASSWORD:-changeme_redis_secret}@redis:6379/0
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:?JWT_SECRET_KEY must be set}
+    volumes:
+      - ./backend/data:/app/data
+      - ./backend/logs:/app/logs
+      - ./backend/ml:/app/ml
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 1G
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: phishguard-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

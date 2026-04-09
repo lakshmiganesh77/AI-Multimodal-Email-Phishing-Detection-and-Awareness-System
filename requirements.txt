@@ -1,0 +1,43 @@
+# Core Backend
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+requests
+psycopg2-binary
+SQLAlchemy
+redis
+celery
+
+# Security & Authentication
+PyJWT
+passlib
+bcrypt==3.2.0
+slowapi
+
+# Machine Learning (Standard)
+numpy
+pandas
+scikit-learn
+xgboost
+joblib
+
+# Deep Learning (Advanced)
+tensorflow
+keras
+torch
+transformers
+
+# Image Analysis (OCR & QR)
+opencv-python
+pillow
+pytesseract
+pyzbar
+
+# Utilities
+email-validator
+beautifulsoup4
+tldextract
+python-whois
+oletools
+pypdf

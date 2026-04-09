@@ -1,0 +1,32 @@
+From: "PayPal Service" <service@paypa1.com>
+To: target@example.com
+Subject: Action Required: Your account has been limited
+Date: Thu, 19 Feb 2026 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="boundary123"
+
+--boundary123
+Content-Type: text/plain; charset="utf-8"
+
+Your PayPal account has been limited due to unusual activity.
+Please log in immediately to restore access.
+
+Verify Identity: http://www.paypa1.com/verify-account
+
+If you do not act within 24 hours, your account will be permanently suspended.
+
+--boundary123
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<h1>PayPal</h1>
+<p>Your account has been limited due to <b>unusual activity</b>.</p>
+<p>Please log in <b>immediately</b> to restore access.</p>
+<br>
+<a href="http://www.paypa1.com/verify-account">Verify Identity Now</a>
+<br>
+<p style="color:red">If you do not act within 24 hours, your account will be permanently suspended.</p>
+</body>
+</html>
+--boundary123--

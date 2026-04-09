@@ -1,0 +1,26 @@
+Content-Type: multipart/mixed; boundary="===============1854718747216595265=="
+MIME-Version: 1.0
+Subject: [SUSPICIOUS] Invoice 4022
+From: Billing <billing@unknown-vendor.net>
+To: user@example.com
+Date: Sun, 15 Feb 2026 22:14:34 +0530
+
+--===============1854718747216595265==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+
+    <p>Please see attached invoice.</p>
+    <p>Payment is due tomorrow.</p>
+    <p>Thanks.</p>
+    
+--===============1854718747216595265==
+Content-Type: application/octet-stream; Name="invoice_4022.html"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="invoice_4022.html"
+
+PGh0bWw+PHNjcmlwdD5tYWxpY2lvdXNfanMoKTwvc2NyaXB0PjwvaHRtbD4=
+
+--===============1854718747216595265==--

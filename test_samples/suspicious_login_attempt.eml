@@ -1,0 +1,19 @@
+Content-Type: multipart/mixed; boundary="===============2855872060545277836=="
+MIME-Version: 1.0
+Subject: [SUSPICIOUS] New login from unknown device
+From: Security Alert <no-reply@security-alerts-web.com>
+To: user@example.com
+Date: Sun, 15 Feb 2026 22:14:34 +0530
+
+--===============2855872060545277836==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+
+    <p>We noticed a new login to your account from Russia.</p>
+    <p>If this was not you, please change your password.</p>
+    <p><a href="http://reset-password-security.com">Reset Password</a></p>
+    <p>Device: Unknown</p>
+    
+--===============2855872060545277836==--

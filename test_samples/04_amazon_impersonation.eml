@@ -1,0 +1,18 @@
+From: "Amazon Support" <amazon-support@gmail.com>
+To: target@example.com
+Subject: Order Confirmation: You bought a $2000 Laptop
+Date: Thu, 19 Feb 2026 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<h1>Amazon.com</h1>
+<p>Thank you for your order!</p>
+<p>You have purchased a <b>Gaming Laptop</b> for <b>$2,000.00</b>.</p>
+<p>If you did not authorize this purchase, please call us immediately or click below to cancel.</p>
+<a href="http://bit.ly/cancel-order">Cancel Order</a>
+<br>
+<p>Regards,<br>Customer Service</p>
+</body>
+</html>
